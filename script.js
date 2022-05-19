@@ -1,9 +1,15 @@
-var timeEl = document.querySelector('.time');
-var mainEl = document.getElementById('#main');
-var secondsLeft = 4;
+let bgbuttonEl = document.getElementById('begin-btn');
+
+let timeEl = document.querySelector('.time');
+let mainEl = document.getElementById('#main');
+let secondsLeft = 4;
+
+bgbuttonEl.addEventListener('click', (function(){
+
+}))
 
 function setTime() {
-    var timerInterval = setInterval(function(){
+    let timerInterval = setInterval(function(){
         secondsLeft--;
         timeEl.textContent = secondsLeft + 'seconds remaining';
 
