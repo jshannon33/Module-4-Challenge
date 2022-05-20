@@ -1,27 +1,27 @@
 let bgbuttonEl = document.getElementById('begin-btn');
-
 let timeEl = document.querySelector('.time');
 let mainEl = document.getElementById('#main');
-let secondsLeft = 4;
 
-bgbuttonEl.addEventListener('click', (function(){
+let questionOneEl = document.getElementById('#question-1');
+questionOneEl
 
-}))
-
-function setTime() {
-    let timerInterval = setInterval(function(){
+bgbuttonEl.addEventListener('click', (function () {
+    let secondsLeft = 5;
+    let timerInterval = setInterval(function () {
         secondsLeft--;
-        timeEl.textContent = secondsLeft + 'seconds remaining';
+        timeEl.textContent = secondsLeft + ' second(s) remaining';
 
         if (secondsLeft === 0) {
             clearInterval(timerInterval);
             sendMessage();
         }
-    },1000);
-}
-function sendMessage(){
+
+    }, 1000);
+
+}))
+
+function sendMessage() {
     timeEl.textContent = 'done';
 }
 
-setTime();
 
