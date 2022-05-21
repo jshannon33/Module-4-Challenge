@@ -2,10 +2,8 @@ let bgbuttonEl = document.getElementById('begin-btn');
 let timeEl = document.querySelector('.time');
 let mainEl = document.getElementById('#main');
 
-let questionOneEl = document.getElementById('#question-1');
-questionOneEl
-
 bgbuttonEl.addEventListener('click', (function () {
+    
     let secondsLeft = 5;
     let timerInterval = setInterval(function () {
         secondsLeft--;
@@ -15,13 +13,15 @@ bgbuttonEl.addEventListener('click', (function () {
             clearInterval(timerInterval);
             sendMessage();
         }
-
     }, 1000);
-
 }))
 
 function sendMessage() {
-    timeEl.textContent = 'done';
+    timeEl.textContent = 'Game Over';
 }
 
+function displayQuestion(){
+    const q = document.getElementById('question-div');
+    q.style.display = 'block';
+}
 
