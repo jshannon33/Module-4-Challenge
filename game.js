@@ -18,7 +18,7 @@ let questions = [
         choice1: 'two',
         choice1: 'three',
         choice1: 'four',
-        answer: '2',
+        answer: 'two',
     },
     {
         question: 'first question',
@@ -26,7 +26,7 @@ let questions = [
         choice1: 'two',
         choice1: 'three',
         choice1: 'four',
-        answer: '2', 
+        answer: 'two', 
     },
     {
         question: 'first question',
@@ -34,7 +34,7 @@ let questions = [
         choice1: 'two',
         choice1: 'three',
         choice1: 'four',
-        answer: '2', 
+        answer: 'two', 
     },
     {
         question: 'first question',
@@ -42,7 +42,7 @@ let questions = [
         choice1: 'two',
         choice1: 'three',
         choice1: 'four',
-        answer: '2', 
+        answer: 'two', 
     }
 ];
 

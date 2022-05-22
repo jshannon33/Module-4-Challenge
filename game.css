@@ -1,6 +1,10 @@
 body{
-    /* color: #fff; */
+    /* color: black; */
 }
+
+/* .container{
+    justify-content: flex-start;
+} */
 
 .choice-container{
     display: flex;
